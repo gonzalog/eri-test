@@ -12,4 +12,21 @@
 //
 //= require rails-ujs
 //= require turbolinks
-//= require_tree .
+//= require_tree
+
+//= require jquery
+//= require angular/angular
+//= require angular-animate/angular-animate
+//= require angular-aria/angular-aria
+//= require angular-material/angular-material
+
+//=require ./directives
+//=require ./services
+
+"use strict";
+
+const eriTestApp = angular.module( "eriTestApp", [
+    "ngMaterial",
+    "eriTestServices",
+    "eriTestDirectives"
+] );
